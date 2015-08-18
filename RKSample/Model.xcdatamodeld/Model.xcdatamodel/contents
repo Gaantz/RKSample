@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Clase" representedClassName="Clase" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Faction" representedClassName="Faction" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Info" representedClassName="Info" syncable="YES">
+        <attribute name="patch" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="classes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Clase" syncable="YES"/>
+        <relationship name="factions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Faction" syncable="YES"/>
+        <relationship name="locales" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Locale" syncable="YES"/>
+        <relationship name="qualities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Quality" syncable="YES"/>
+        <relationship name="races" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Race" syncable="YES"/>
+        <relationship name="sets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Set" syncable="YES"/>
+        <relationship name="types" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Type" syncable="YES"/>
+    </entity>
+    <entity name="Locale" representedClassName="Locale" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Quality" representedClassName="Quality" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Race" representedClassName="Race" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Set" representedClassName="Set" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Type" representedClassName="Type" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Info" positionX="-306" positionY="-180" width="128" height="163"/>
+        <element name="Race" positionX="-11" positionY="-135" width="128" height="58"/>
+        <element name="Quality" positionX="-252" positionY="18" width="128" height="58"/>
+        <element name="Faction" positionX="124" positionY="-99" width="128" height="58"/>
+        <element name="Type" positionX="-65" positionY="153" width="128" height="58"/>
+        <element name="Set" positionX="124" positionY="18" width="128" height="58"/>
+        <element name="Clase" positionX="-54" positionY="-9" width="128" height="58"/>
+        <element name="Locale" positionX="-216" positionY="99" width="128" height="58"/>
+    </elements>
+</model>
